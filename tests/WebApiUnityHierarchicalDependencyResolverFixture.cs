@@ -3,8 +3,11 @@
 using System;
 using System.Linq;
 using System.Web.Http.Controllers;
-using Microsoft.Practices.Unity.WebApi;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Unity;
+using Unity.AspNet.WebApi;
+using Unity.Exceptions;
+using Unity.Lifetime;
 
 namespace Microsoft.Practices.Unity.WebIntegation.Tests
 {

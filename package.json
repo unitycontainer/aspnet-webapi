@@ -1,0 +1,8 @@
+{
+  "version": "5.0.0",
+  "name": "Unity.AspNet.WebApi",
+  "description": "The AspNet.WebApi adapter for Unity Container.",
+  "devDependencies": {
+    "Unity.Abstractions": "unitycontainer/abstractions"
+  }
+}
