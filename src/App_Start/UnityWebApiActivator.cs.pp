@@ -30,8 +30,7 @@ namespace $rootnamespace$
         /// </summary>
         public static void Shutdown()
         {
-            var container = UnityConfig.GetConfiguredContainer();
-            container.Dispose();
+            UnityConfig.Container.Dispose();
         }
     }
 }
