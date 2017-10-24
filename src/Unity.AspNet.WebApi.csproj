@@ -47,36 +47,29 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNet.WebApi" Version="5.2.3" />
-    <PackageReference Include="Unity.Abstractions" Version="2.0.2" />
-    <PackageReference Include="Unity.Container" Version="5.0.1" />
     <PackageReference Include="WebActivatorEx" Version="2.2.0" />
   </ItemGroup>
 
 
   <PropertyGroup>
-    <UnityAbstractions>$(SolutionDir)\..\Abstractions\src\Unity.Abstractions.csproj</UnityAbstractions>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net45|AnyCPU'">
-    <DocumentationFile>$(SolutionDir)\lib\net45\Unity.AspNet.WebApi.xml</DocumentationFile>
-    <DefineConstants>TRACE;NET45</DefineConstants>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net47|AnyCPU'">
-    <DocumentationFile>$(SolutionDir)\lib\net47\Unity.AspNet.WebApi.xml</DocumentationFile>
-    <DefineConstants>TRACE;NET47</DefineConstants>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net45|AnyCPU'">
-    <DefineConstants>TRACE;DEBUG;NET45</DefineConstants>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net47|AnyCPU'">
-    <DefineConstants>TRACE;DEBUG;NET47</DefineConstants>
+    <UnityAbstractions>..\..\Abstractions\src\Unity.Abstractions.csproj</UnityAbstractions>
+    <UnityContainer>..\..\Container\src\Unity.Container.csproj</UnityContainer>
   </PropertyGroup>
 
   <ItemGroup Condition="Exists('$(UnityAbstractions)')">
     <ProjectReference Include="$(UnityAbstractions)" />
+  </ItemGroup>
+  
+  <ItemGroup Condition="Exists('$(UnityContainer)')">
+    <ProjectReference Include="$(UnityContainer)" />
+  </ItemGroup>
+
+  <ItemGroup Condition="!Exists('$(UnityAbstractions)')">
+    <PackageReference Include="Unity.Abstractions" Version="2.0.2" />
+  </ItemGroup>
+
+  <ItemGroup Condition="!Exists('$(UnityContainer)')">
+    <PackageReference Include="Unity.Container" Version="5.0.1" />
   </ItemGroup>
 
 </Project>
