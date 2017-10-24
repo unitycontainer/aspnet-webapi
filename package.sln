@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27004.2002
+VisualStudioVersion = 15.0.27004.2005
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Unity.AspNet.WebApi", "src\Unity.AspNet.WebApi.csproj", "{B9C4A1DE-408C-43E8-A9A6-D7B0916A8A81}"
 EndProject
@@ -21,8 +21,8 @@ Global
 		{B9C4A1DE-408C-43E8-A9A6-D7B0916A8A81}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6CFCB2F7-3FAD-4926-AA76-16111E388E09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6CFCB2F7-3FAD-4926-AA76-16111E388E09}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6CFCB2F7-3FAD-4926-AA76-16111E388E09}.Package|Any CPU.ActiveCfg = Debug|Any CPU
-		{6CFCB2F7-3FAD-4926-AA76-16111E388E09}.Package|Any CPU.Build.0 = Debug|Any CPU
+		{6CFCB2F7-3FAD-4926-AA76-16111E388E09}.Package|Any CPU.ActiveCfg = Package|Any CPU
+		{6CFCB2F7-3FAD-4926-AA76-16111E388E09}.Package|Any CPU.Build.0 = Package|Any CPU
 		{6CFCB2F7-3FAD-4926-AA76-16111E388E09}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6CFCB2F7-3FAD-4926-AA76-16111E388E09}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection

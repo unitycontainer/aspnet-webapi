@@ -1,31 +1,30 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net47</TargetFramework>
+    <TargetFramework>net45</TargetFramework>
     <IsPackable>false</IsPackable>
-    <RootNamespace>Unity.Interception.Tests</RootNamespace>
+    <RootNamespace>Unity.AspNet.WebApi.Tests</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.5.0-preview-20171012-09" />
     <PackageReference Include="MSTest.TestAdapter" Version="1.2.0" />
     <PackageReference Include="MSTest.TestFramework" Version="1.2.0" />
+    <PackageReference Include="Unity.Container" Version="5.0.1" />
   </ItemGroup>
 
   <ItemGroup>
     <Reference Include="System.Web" />
   </ItemGroup>
-
   
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNet.WebApi" Version="5.2.3" />
-    <ProjectReference Include="..\src\Unity.AspNet.WebApi.csproj" />
+    <ProjectReference Include="$(SolutionDir)\src\Unity.AspNet.WebApi.csproj" />
   </ItemGroup>
   
-
   <PropertyGroup>
-    <UnityAbstractions>..\..\Abstractions\src\Unity.Abstractions.csproj</UnityAbstractions>
-    <UnityContainer>..\..\Container\src\Unity.Container.csproj</UnityContainer>
+    <UnityAbstractions>$(SolutionDir)\..\Abstractions\src\Unity.Abstractions.csproj</UnityAbstractions>
+    <UnityContainer>$(SolutionDir)\..\Container\src\Unity.Container.csproj</UnityContainer>
   </PropertyGroup>
 
 
@@ -37,13 +36,8 @@
     <ProjectReference Include="$(UnityContainer)" />
   </ItemGroup>
 
-
   <ItemGroup Condition="!Exists('$(UnityAbstractions)')">
     <PackageReference Include="Unity.Abstractions" Version="2.0.2" />
-  </ItemGroup>
-
-  <ItemGroup Condition="!Exists('$(UnityContainer)')">
-    <PackageReference Include="Unity.Container" Version="5.0.1" />
   </ItemGroup>
 
 </Project>
