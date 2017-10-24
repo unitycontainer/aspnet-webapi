@@ -20,6 +20,9 @@ build:
   project: package.sln
   parallel: true
   verbosity: minimal
+  
+test_script:
+- cmd: dotnet test
 
 test_script:
 - cmd: dotnet test
