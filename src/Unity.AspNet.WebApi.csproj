@@ -19,7 +19,7 @@
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>package.snk</AssemblyOriginatorKeyFile>
     <DelaySign>false</DelaySign>
-    <RootNamespace>Unity.AspNet.Mvc</RootNamespace>
+    <RootNamespace>Unity.AspNet.WebApi</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
