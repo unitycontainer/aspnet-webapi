@@ -7,7 +7,6 @@ using System.Web.Http.Controllers;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 using Unity.Exceptions;
-using Unity.Lifetime;
 
 namespace Unity.AspNet.WebApi.Tests
 {
