@@ -13,7 +13,7 @@ namespace Unity.AspNet.WebApi
     /// when <see cref="BeginScope"/> is invoked.
     /// </summary>
     /// <remarks>
-    /// Because each scope creates a new child Unity container, you can benefit from using the <see cref="Unity.Lifetime.HierarchicalLifetimeManager"/>
+    /// Because each scope creates a new child Unity container, you can benefit from using the <see cref="Unity.WithLifetime.HierarchicalLifetimeManager"/>
     /// lifetime manager.
     /// </remarks>
     public sealed class UnityHierarchicalDependencyResolver : IDependencyResolver
