@@ -30,13 +30,13 @@
   <ItemGroup>
     <Reference Include="System.Web" />
   </ItemGroup>
-  
+
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <TargetFrameworks>net45;net46;net47</TargetFrameworks>
     <DebugType>Portable</DebugType>
   </PropertyGroup>
-  
+
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <TargetFramework>net47</TargetFramework>
@@ -44,7 +44,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNet.WebApi" Version="5.2.7" />
+    <PackageReference Include="Microsoft.AspNet.WebApi" Version="5.2" />
     <PackageReference Include="WebActivatorEx" Version="2.2.0" />
   </ItemGroup>
 
@@ -61,7 +61,7 @@
     <PackageReference Include="Unity.Container" Version="$(UnityContainerVersion)" />
   </ItemGroup>
 
-  
+
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net45|AnyCPU'">
     <DocumentationFile>bin\Release\net45\Unity.AspNet.WebApi.xml</DocumentationFile>
   </PropertyGroup>
