@@ -23,6 +23,9 @@ namespace $rootnamespace$
             var resolver = new UnityDependencyResolver(UnityConfig.Container);
 
             GlobalConfiguration.Configuration.DependencyResolver = resolver;
+
+            // Uncomment if you want to use PerRequestLifetimeManager
+            // Microsoft.Web.Infrastructure.DynamicModuleHelper.DynamicModuleUtility.RegisterModule(typeof(UnityPerRequestHttpModule));
         }
 
         /// <summary>
