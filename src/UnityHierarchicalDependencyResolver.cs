@@ -17,7 +17,7 @@ namespace Unity.AspNet.WebApi
         private readonly IUnityContainer _container;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="UnityDependencyResolver"/> class for a container.
+        /// Initializes a new instance of the <see cref="UnityHierarchicalDependencyResolver"/> class for a container.
         /// </summary>
         /// <param name="container">The <see cref="IUnityContainer"/> to wrap with the <see cref="IDependencyResolver"/>
         /// interface implementation.</param>
